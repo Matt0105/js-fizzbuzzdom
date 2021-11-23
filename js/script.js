@@ -4,6 +4,7 @@ const container = document.querySelector(".container");
 for(let i = 1; i <= 100; i++) {
     
     const card = document.createElement("div");
+    card.classList.add("square");
 
     //capisco se è divisibile per 3 per 5 o per entrambi
     if(i % 3 == 0 && i % 5 != 0) {

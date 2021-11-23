@@ -1,0 +1,46 @@
+:root {
+    --background: #183a4a;
+    --number: #3d88ae;
+    --fizz: #61d2a4;
+    --buzz: #f9d277;
+    --fizzbuzz: #de5471;
+}
+body {
+    text-align: center;
+    background-color: var(--background);
+
+}
+
+.title {
+    font-size: 6rem;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    font-size: 2rem;
+}
+
+.number {
+    background-color: var(--number);
+}
+
+.fizz {
+    background-color: var(--fizz);
+}
+
+.buzz {
+    background-color: var(--buzz);
+}
+
+.fizzbuzz {
+    background-color: var(--fizzbuzz);
+}
