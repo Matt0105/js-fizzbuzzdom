@@ -7,19 +7,19 @@ for(let i = 1; i <= 100; i++) {
     card.classList.add("square");
 
     //capisco se è divisibile per 3 per 5 o per entrambi
-    if(i % 3 == 0 && i % 5 != 0) {
+    if(i % 3 == 0 && i % 5 == 0) {
+        card.append("FizzBuzz");
+        card.classList.add("fizzbuzz");
+        container.append(card);
+    }
+    else if(i % 3 == 0) {
         card.append("Fizz");
         card.classList.add("fizz");
         container.append(card);
     }
-    else if(i % 5 == 0 && i % 3 != 0) {
+    else if(i % 5 == 0) {
         card.classList.add("buzz");
         card.append("Buzz");
-        container.append(card);
-    }
-    else if(i % 3 == 0 && i % 5 == 0) {
-        card.append("FizzBuzz");
-        card.classList.add("fizzbuzz");
         container.append(card);
     }
     else {
