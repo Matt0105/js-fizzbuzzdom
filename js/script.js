@@ -1,17 +1,25 @@
+const container = document.querySelector(".container");
+
 //genero numeri da 1 a 100
 for(let i = 1; i <= 100; i++) {
+    
+    const card = document.createElement("div");
 
     //capisco se è divisibile per 3 per 5 o per entrambi
     if(i % 3 == 0 && i % 5 != 0) {
-        console.log("fizz");
+        card.append("Fizz");
+        container.append(card);
     }
     else if(i % 5 == 0 && i % 3 != 0) {
-        console.log("buzz");
+        card.append("Buzz");
+        container.append(card);
     }
     else if(i % 3 == 0 && i % 5 == 0) {
-        console.log("FizzBuzz");
+        card.append("FizzBuzz");
+        container.append(card);
     }
     else {
-        console.log(i);
+        card.append(i);
+        container.append(card);
     }
 }
